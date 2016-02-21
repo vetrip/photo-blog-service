@@ -25,7 +25,7 @@
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
-			<param-value>com.sample.service</param-value>
+			<param-value> io.swagger.jaxrs.listing,com.sample.service</param-value>
 		</init-param>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
@@ -37,4 +37,5 @@
 		<servlet-name>restServlet</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+	
 </web-app>

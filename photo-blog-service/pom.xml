@@ -81,12 +81,6 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-moxy</artifactId>
-			<version>2.4.1</version>
-		</dependency>
-
 
 		<!-- Spring 4 dependencies -->
 		<dependency>
@@ -167,13 +161,37 @@
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jersey2-jaxrs</artifactId>
+			<version>1.5.7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-hibernate4</artifactId>
+			<version>2.4.4</version>
+		</dependency>
 
 		<!-- testing -->
 		<!-- Jersey-client -->
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
-			<version>2.4.1</version>
+			<version>${jersey.version}</version>
+		</dependency>
+		
+		<!-- <dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>${jersey.version}</version>
+		</dependency> -->
+		
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>${jersey.version}</version>
 		</dependency>
 
 		<dependency>
@@ -197,11 +215,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.swagger</groupId>
-			<artifactId>swagger-jersey2-jaxrs</artifactId>
-			<version>1.5.0</version>
-		</dependency>
+		
 
 	</dependencies>
 

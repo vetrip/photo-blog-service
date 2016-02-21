@@ -1,5 +1,7 @@
 package com.sample.model;
 
+import io.swagger.annotations.ApiModel;
+
 import java.io.Serializable;
 
 import javax.persistence.*;
@@ -14,6 +16,7 @@ import java.util.List;
  * 
  */
 @Entity
+@ApiModel
 @NamedQuery(name="Photo.findAll", query="SELECT p FROM Photo p")
 public class Photo implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -1,5 +1,7 @@
 package com.sample.model;
 
+import io.swagger.annotations.ApiModel;
+
 import java.io.Serializable;
 
 import javax.persistence.*;
@@ -12,6 +14,7 @@ import javax.xml.bind.annotation.XmlTransient;
  */
 @Entity
 @Table(name="album_photo")
+@ApiModel
 @NamedQuery(name="AlbumPhoto.findAll", query="SELECT a FROM AlbumPhoto a")
 public class AlbumPhoto implements Serializable {
 	private static final long serialVersionUID = 1L;

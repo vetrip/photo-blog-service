@@ -1,5 +1,7 @@
 package com.sample.model;
 
+import io.swagger.annotations.ApiModel;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -12,7 +14,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlTransient;
 
-import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
 
 
 /**
@@ -20,6 +21,7 @@ import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
  * 
  */
 @Entity
+@ApiModel
 @NamedQuery(name="Album.findAll", query="SELECT a FROM Album a")
 public class Album implements Serializable {
 	private static final long serialVersionUID = 1L;

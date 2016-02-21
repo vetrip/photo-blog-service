@@ -1,6 +1,9 @@
 package com.sample.model;
 
+import io.swagger.annotations.ApiModel;
+
 import java.io.Serializable;
+
 import javax.persistence.*;
 
 
@@ -10,6 +13,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="photo_tags")
+@ApiModel
 @NamedQuery(name="PhotoTag.findAll", query="SELECT p FROM PhotoTag p")
 public class PhotoTag implements Serializable {
 	private static final long serialVersionUID = 1L;
