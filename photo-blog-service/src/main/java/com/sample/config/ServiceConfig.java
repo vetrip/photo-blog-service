@@ -12,8 +12,7 @@ public class ServiceConfig extends ResourceConfig{
 		register(CORSResponseFilter.class);
 		
 		register(ObjectMapperResolver.class);
-		register(JacksonJsonProvider.class);
-		
+		register(JacksonJsonProvider.class);		
 		//Added for swagger configuration
 		BeanConfig beanConfig = new BeanConfig();
         beanConfig.setVersion("1.0.0");
